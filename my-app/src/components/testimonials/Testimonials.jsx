@@ -1,8 +1,11 @@
 import React from 'react'
-import './testiomnials.css'
+import './testimonials.css'
 
-export const Testimonials = () => {
+
+ const Testimonials = () => {
   return (
     <div>Testimonials</div>
   )
 }
+
+export default Testimonials
