@@ -1,7 +1,9 @@
 import React from 'react'
 import './portfolio.css'
 import ME from '../../assets/me.jpg'
-import ZRZUT from '../../assets/zrzut.mp4'
+import Game from '../../assets/game.mp4'
+import Tube from '../../assets/tube.mp4'
+import Ecommerce from '../../assets/ecommerce.mp4'
 import HoverVideoPlayer from "react-hover-video-player";
 
 
@@ -10,23 +12,26 @@ const data = [
 	{
 		id: 1,
 		image: ME,
-		title: 'Title',
+		title: 'Ecommerce Shop',
 		github: 'https://github.com/Piotrek1994/Ecommerce-Dashboard',
 		demo: 'https://ecommerce-dashboard-tau.vercel.app/',
+		video: Ecommerce,
 	},
 	{
 		id: 2,
 		image: ME,
-		title: 'Title',
-		github: 'https://github.com/Piotrek1994/my-tube',
-		demo: 'https://videos-rouge-one.vercel.app/',
+		title: 'Space Game',
+		github: 'https://github.com/Piotrek1994/my-game',
+		demo: 'https://game-piotrek1994.vercel.app/',
+		video: Game,
 	},
 	{
 		id: 3,
 		image: ME,
-		title: 'Title',
-		github: 'https://github.com/Piotrek1994/colourful-board',
-		demo: 'https://colourful-board.vercel.app/',
+		title: 'My Tube',
+		github: 'https://github.com/Piotrek1994/my-tube',
+		demo: 'https://videos-piotrek1994.vercel.app/',
+		video: Tube,
 	},
 ]
 
@@ -37,13 +42,14 @@ const Portfolio = () => {
 			<h2>Portfolio</h2>
 
 			<div className='container portfolio__container'>
-				{data.map(({ id, title, github, demo }) => {
+				{data.map(({ id, title, github, demo, video }) => {
 					return (
 						<article key={id} className='portfolio__item'>
 							<div className='portfolio__item-image'>
 
+
               <HoverVideoPlayer
-      videoSrc={ZRZUT}
+      videoSrc={video}
       pausedOverlay={
         <img
           src=""

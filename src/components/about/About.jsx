@@ -6,11 +6,15 @@ import { FaAward } from 'react-icons/fa'
 import { FiUsers } from 'react-icons/fi'
 import { BsFolderCheck } from 'react-icons/bs'
 
+
 const About = () => {
 	return (
 		<section id='about'>
 			<h5>Get To Know</h5>
 			<h2>About me</h2>
+
+
+			
 
 			<div className='container about__container'>
 				<div className='about__me'>
@@ -38,10 +42,7 @@ const About = () => {
 							<small>10+ Completed</small>
 						</article>
 					</div>
-					<p>
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos rem eius exercitationem eveniet molestias
-						minima laboriosam tempora deleniti molestiae expedita natus commodi ipsa enim provident, iste excepturi.
-						Rem, deleniti officiis!
+					<p>I am an active person who has moved forward through self-development. I have always been drawn by changing and new technologies, especially in creating fully responsive applications and websites, using Java Script and React. I am eager to broaden my knowledge with contemporary and challenging situations. Currently I am engaged in programming.
 					</p>
           <a href="#contact" className='btn btn-primary'>Let's Talk</a>
 				</div>
