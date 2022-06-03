@@ -7,6 +7,13 @@ import { FiUsers } from 'react-icons/fi'
 import { BsFolderCheck } from 'react-icons/bs'
 
 
+
+
+
+
+
+
+
 const About = () => {
 	return (
 		<section id='about'>
@@ -15,6 +22,9 @@ const About = () => {
 
 
 			
+
+
+
 
 			<div className='container about__container'>
 				<div className='about__me'>

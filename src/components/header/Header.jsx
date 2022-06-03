@@ -1,11 +1,24 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import './header.css'
 import CTA from './CTA'
 import ME from '../../assets/me.jpg'
 import HeaderSocial from './HeaderSocials'
 import zd from '../../assets/zd.png'
+import lottie from 'lottie-web'
 
 const Header = () => {
+	const container = useRef(null)
+
+	useEffect(() => {
+		lottie.loadAnimation({
+			container: container.current,
+			render: 'svg',
+			loop: true,
+			autoplay: true,
+			animationData: require('../hello.json')
+		})
+	}, [])
+
 	return (
 		<header>
 			<div className='container header__container'>
@@ -15,6 +28,7 @@ const Header = () => {
 				<CTA />
 				<HeaderSocial />
 
+				<div className='container' ref={container}></div>
 				{/* <div className='me'>
 					<img src={zd} alt='' />
 				</div> */}
