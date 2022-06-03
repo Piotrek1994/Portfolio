@@ -28,9 +28,9 @@ const Header = () => {
 				<CTA />
 				<HeaderSocial />
 
-				
-					<div className='container lottie__container' ref={container}></div>
-				
+				<div className='animation'>
+					<div className='container' ref={container}></div>
+				</div>
 
 				<a href='#contact' className='scroll__down'>
 					Scroll Down

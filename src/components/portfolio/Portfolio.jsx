@@ -5,9 +5,9 @@ import Game from '../../assets/game.mp4'
 import Tube from '../../assets/tube.mp4'
 import Ecommerce from '../../assets/ecommerce.mp4'
 import HoverVideoPlayer from "react-hover-video-player";
-import ecommerceImg from '../../assets/background/Ecommerce.jpg'
-import mytubeImg from '../../assets/background/mytube.jpg'
-import gameImg from '../../assets/background/game.jpg'
+import ecommerceImg from '../../assets/Ecommerce.jpg'
+import mytubeImg from '../../assets/mytube.jpg'
+import gameImg from '../../assets/game.jpg'
 
 
 
@@ -48,7 +48,7 @@ const Portfolio = () => {
 			<h2>Portfolio</h2>
 
 			<div className='container portfolio__container'>
-				{data.map(({ id, title, github, demo, video }) => {
+				{data.map(({ id, title, github, demo, video, videoImg }) => {
 					return (
 						<article key={id} className='portfolio__item'>
 							<div className='portfolio__item-image'>

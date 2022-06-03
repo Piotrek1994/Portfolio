@@ -7,8 +7,7 @@ import {IoLogoTwitter} from 'react-icons/io'
  const Footer = () => {
   return (
     <footer>
-      <a href="#" className='footer__logo'>PIOTR</a>
-      <ul className='permalinks'>
+        <ul className='permalinks'>
         <li><a href="#">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
@@ -16,14 +15,14 @@ import {IoLogoTwitter} from 'react-icons/io'
         <li><a href="#contact">Contact</a></li>
       </ul>
 
-      <div className="footer__socials">
-        <a href="https://facebook.com"><FaFacebookF/></a>
-        <a href="https://instagram.com"><FiInstagram/></a>
-        <a href="https://twitter.com"><IoLogoTwitter/></a>
-      </div>
+      {/* <div className="footer__socials">
+        <a href="https://www.facebook.com/profile.php?id=100015993577449" target='_blank'><FaFacebookF/></a>
+        <a href="https://www.instagram.com/im_piotr/" target='_blank'><FiInstagram/></a>
+        <a href="https://twitter.com/Piotr18200273" target='_blank'><IoLogoTwitter/></a>
+      </div> */}
 
       <div className="footer__copyright">
-        <small>&copy; Piotr Prus. All rights reserved.</small>
+        <small>&copy; 2022 Piotr Prus. All rights reserved.</small>
       </div>
     </footer>
   )

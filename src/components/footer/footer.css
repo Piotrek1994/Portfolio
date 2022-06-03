@@ -3,12 +3,13 @@ footer {
     margin-top: 7rem;
     font-size: 0.9rem;
     text-align: center;
-    background: var(--color-primary);
+    background: #ABC4FF;
+    color: black;
 
 }
 
 footer a {
-    color: var(--color-bg);
+    color: black;
 }
 
 .footer__logo {
@@ -50,8 +51,12 @@ footer a {
 }
 
 .footer__copyright {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
     margin-bottom: 4rem;
     color: var(--color-bg);
+
 }
 
 
