@@ -15,7 +15,7 @@ const Header = () => {
 			render: 'svg',
 			loop: true,
 			autoplay: true,
-			animationData: require('../hello.json')
+			animationData: require('../hello.json'),
 		})
 	}, [])
 
@@ -28,10 +28,9 @@ const Header = () => {
 				<CTA />
 				<HeaderSocial />
 
-				<div className='container' ref={container}></div>
-				{/* <div className='me'>
-					<img src={zd} alt='' />
-				</div> */}
+				
+					<div className='container lottie__container' ref={container}></div>
+				
 
 				<a href='#contact' className='scroll__down'>
 					Scroll Down

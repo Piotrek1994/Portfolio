@@ -10,6 +10,12 @@ header {
 	text-align: center;
 }
 
+.lottie__container {
+	height: 55%;
+	
+	
+}
+
 .cta {
 	display: flex;
 	justify-content: center;

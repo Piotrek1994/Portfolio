@@ -41,6 +41,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
+    
 }
 
 input, textarea {
@@ -51,6 +52,7 @@ input, textarea {
     border: 2px solid var(--color-primary-variant);
     resize: none;
     color: var(--color-white);
+    font-family: 'Poppins', sans-serif;
 }
 
 

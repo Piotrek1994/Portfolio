@@ -91,13 +91,14 @@ a:hover {
     cursor: pointer;
     border: 1px solid var(--color-primary);
 	border-radius: 1rem;
-    transition: color all 0.5s, background all 0.5s;
+    transition: color all 0.5s, background all 0.5s, font-weight 0.5s;
 }
 
 .btn:hover {
-    background: var(--color-whie);
-    color: var(--color-bg);
+    background: var(--color-whiet);
+    color: var(black);
     border-color: transparent;
+	font-weight: 500;
 }
 
 .btn-primary {

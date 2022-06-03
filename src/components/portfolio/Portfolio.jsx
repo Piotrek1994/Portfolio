@@ -5,6 +5,9 @@ import Game from '../../assets/game.mp4'
 import Tube from '../../assets/tube.mp4'
 import Ecommerce from '../../assets/ecommerce.mp4'
 import HoverVideoPlayer from "react-hover-video-player";
+import ecommerceImg from '../../assets/background/Ecommerce.jpg'
+import mytubeImg from '../../assets/background/mytube.jpg'
+import gameImg from '../../assets/background/game.jpg'
 
 
 
@@ -16,6 +19,7 @@ const data = [
 		github: 'https://github.com/Piotrek1994/Ecommerce-Dashboard',
 		demo: 'https://ecommerce-dashboard-tau.vercel.app/',
 		video: Ecommerce,
+		videoImg: ecommerceImg,
 	},
 	{
 		id: 2,
@@ -24,6 +28,7 @@ const data = [
 		github: 'https://github.com/Piotrek1994/my-game',
 		demo: 'https://game-piotrek1994.vercel.app/',
 		video: Game,
+		videoImg: gameImg,
 	},
 	{
 		id: 3,
@@ -32,6 +37,7 @@ const data = [
 		github: 'https://github.com/Piotrek1994/my-tube',
 		demo: 'https://videos-piotrek1994.vercel.app/',
 		video: Tube,
+		videoImg: mytubeImg,
 	},
 ]
 
@@ -52,7 +58,7 @@ const Portfolio = () => {
       videoSrc={video}
       pausedOverlay={
         <img
-          src=""
+          src={videoImg}
           alt=""
           style={{
             // Make the image expand to cover the video's dimensions
