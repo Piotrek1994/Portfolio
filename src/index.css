@@ -9,9 +9,9 @@
 
 :root {
 	--color-bg: #edf2fb;
-	--color-bg-variant: #d7e3fc;
+	--color-bg-variant: #abc4ff;
 	--color-primary: #000814;
-	--color-primary-variant: #ABC4FF;
+	--color-primary-variant: #abc4ff;
 	--color-whie: #000814;
 	--color-light: #000814;
 
@@ -80,7 +80,7 @@ a {
 }
 
 a:hover {
-    color: var(--color-white);
+    color: var(--color-whie);
 }
 
 .btn {
@@ -91,7 +91,7 @@ a:hover {
     cursor: pointer;
     border: 1px solid var(--color-primary);
 	border-radius: 1rem;
-    transition:  background 0.5s, transform 0.5s;
+    transition:  background 0.5s, transform 0.2s;
 }
 
 .btn:hover {

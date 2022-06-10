@@ -4,12 +4,10 @@ import ME from '../../assets/me.jpg'
 import Game from '../../assets/game.mp4'
 import Tube from '../../assets/tube.mp4'
 import Ecommerce from '../../assets/ecommerce.mp4'
-import HoverVideoPlayer from "react-hover-video-player";
+import HoverVideoPlayer from 'react-hover-video-player'
 import ecommerceImg from '../../assets/Ecommerce.jpg'
 import mytubeImg from '../../assets/mytube.jpg'
 import gameImg from '../../assets/game.jpg'
-
-
 
 const data = [
 	{
@@ -17,14 +15,14 @@ const data = [
 		image: ME,
 		title: 'Ecommerce Shop',
 		github: 'https://github.com/Piotrek1994/Ecommerce-Dashboard',
-		demo: 'https://ecommerce-dashboard-tau.vercel.app/',
+		demo: 'https://ecommerce-dashboard-piotrek1994.vercel.app/',
 		video: Ecommerce,
 		videoImg: ecommerceImg,
 	},
 	{
 		id: 2,
 		image: ME,
-		title: 'Space Game',
+		title: 'Alien Killer',
 		github: 'https://github.com/Piotrek1994/my-game',
 		demo: 'https://game-piotrek1994.vercel.app/',
 		video: Game,
@@ -50,41 +48,35 @@ const Portfolio = () => {
 			<div className='container portfolio__container'>
 				{data.map(({ id, title, github, demo, video, videoImg }) => {
 					return (
-						<article key={id} className='portfolio__item' >
-							<div className='portfolio__item-image' onClick={()=> window.open(demo, "_blank")}>
-
-
-              <HoverVideoPlayer
-			  
-      videoSrc={video}
-      pausedOverlay={
-        <img 
-		
-          src={videoImg}
-          alt=""
-          style={{
-            // Make the image expand to cover the video's dimensions
-            width: '100%',
-            height: '100%',
-            objectFit: 'cover',
-          }}
-        />
-      }
-      loadingOverlay={
-        <div className="loading-overlay">
-          <div className="loading-spinner" />
-        </div>
-      }
-    />
-
-
+						<article key={id} className='portfolio__item'>
+							<div className='portfolio__item-image' onClick={() => window.open(demo, '_blank', 'noopener')}>
+								<HoverVideoPlayer
+									videoSrc={video}
+									pausedOverlay={
+										<img
+											src={videoImg}
+											alt=''
+											style={{
+												// Make the image expand to cover the video's dimensions
+												width: '100%',
+												height: '100%',
+												objectFit: 'cover',
+											}}
+										/>
+									}
+									loadingOverlay={
+										<div className='loading-overlay'>
+											<div className='loading-spinner' />
+										</div>
+									}
+								/>
 							</div>
 							<h3>{title}</h3>
 							<div className='portfolio__item-cta'>
-								<a href={github} className='btn' target='_blank'>
+								<a href={github} className='btn' target='_blank' rel='noreferrer'>
 									Github
 								</a>
-								<a href={demo} className='btn btn-primary' target='_blank'>
+								<a href={demo} className='btn btn-primary' target='_blank' rel='noreferrer'>
 									Live Demo
 								</a>
 							</div>

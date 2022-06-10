@@ -3,7 +3,7 @@ import './about.css'
 import ME from '../../assets/me.jpg'
 
 import { FaAward } from 'react-icons/fa'
-import { FiUsers } from 'react-icons/fi'
+import { VscBook } from 'react-icons/vsc'
 import { BsFolderCheck } from 'react-icons/bs'
 
 
@@ -16,7 +16,7 @@ import { BsFolderCheck } from 'react-icons/bs'
 
 const About = () => {
 	return (
-		<section id='about'>
+		<section id='about' className='about'>
 			<h5>Get To Know</h5>
 			<h2>About me</h2>
 
@@ -29,7 +29,7 @@ const About = () => {
 			<div className='container about__container'>
 				<div className='about__me'>
 					<div className='about__me-imgage'>
-						<img src={ME} alt='About Image' />
+						<img src={ME} alt='Portret' />
 					</div>
 				</div>
 				<div className='about__content'>
@@ -41,9 +41,9 @@ const About = () => {
 						</article>
 
 						<article className='about__card'>
-							<FiUsers className='about__icon' />
-							<h5>Clients</h5>
-							<small>Almost a year</small>
+							<VscBook className='about__icon' />
+							<h5>Courses</h5>
+							<small>10+ Completed</small>
 						</article>
 
 						<article className='about__card'>
