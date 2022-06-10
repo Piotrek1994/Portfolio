@@ -51,7 +51,7 @@ const Portfolio = () => {
 				{data.map(({ id, title, github, demo, video, videoImg }) => {
 					return (
 						<article key={id} className='portfolio__item' >
-							<div className='portfolio__item-image' onClick={()=> window.open("https://www.instagram.com/", "_blank")}>
+							<div className='portfolio__item-image' onClick={()=> window.open(demo, "_blank")}>
 
 
               <HoverVideoPlayer

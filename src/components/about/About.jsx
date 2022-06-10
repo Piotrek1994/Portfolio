@@ -37,19 +37,19 @@ const About = () => {
 						<article className='about__card'>
 							<FaAward className='about__icon' />
 							<h5>Experience</h5>
-							<small>1+ Year Working</small>
+							<small>Almost a year</small>
 						</article>
 
 						<article className='about__card'>
 							<FiUsers className='about__icon' />
 							<h5>Clients</h5>
-							<small>1+ Year Working</small>
+							<small>Almost a year</small>
 						</article>
 
 						<article className='about__card'>
 							<BsFolderCheck className='about__icon' />
 							<h5>Projects</h5>
-							<small>10+ Completed</small>
+							<small>50+ Completed</small>
 						</article>
 					</div>
 					<p>I am an active person who has moved forward through self-development. I have always been drawn by changing and new technologies, especially in creating fully responsive applications and websites, using Java Script and React. I am eager to broaden my knowledge with contemporary and challenging situations. Currently I am engaged in programming.

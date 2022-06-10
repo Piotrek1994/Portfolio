@@ -91,12 +91,12 @@ a:hover {
     cursor: pointer;
     border: 1px solid var(--color-primary);
 	border-radius: 1rem;
-    transition: color all 0.5s, background all 0.5s, transform all 0.5s;
+    transition:  background 0.5s, transform 0.5s;
 }
 
 .btn:hover {
     background: var(--color-whiet);
-    color: var(black);
+    color: var(--color-whie);
     border-color: transparent;
 	transform: scale(1.1);
 	
@@ -106,6 +106,8 @@ a:hover {
     background: var(--color-primary);
     color: var(--color-bg);
 }
+
+
 
 img {
     display: block;

@@ -12,6 +12,7 @@ header {
 
 .animation {
 	transform: translateY(20%);
+	z-index: -1;
 }
 
 .cta {
@@ -61,11 +62,15 @@ header {
 	bottom: 5rem;
 	transform: rotate(90deg);
 	font-weight: 300;
-	font-size: 0.9;
+	font-size: 0.9;	
 }
 
+
+
+
+
 .header__socials-icon {
-	transition: transform 0.3s;
+	transition: transform 0.2s;
 }
 .header__socials-icon:hover {
 	transform: scale(1.2);
