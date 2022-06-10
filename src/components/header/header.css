@@ -1,17 +1,19 @@
 header {
-	height: 100vh;
+	height: 87vh;
 	padding-top: 7rem;
 	overflow: hidden;
 }
 
 .header__container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	position: relative;
 	height: 100%;
 	text-align: center;
 }
 
 .animation {
-	transform: translateY(20%);
 	z-index: -1;
 }
 
@@ -77,6 +79,8 @@ header {
 	transform: scale(1.2);
 }
 
+
+
 @media screen and (max-width: 1024px) {
 	header {
 		height: 68vh;
@@ -84,9 +88,7 @@ header {
 }
 
 @media screen and (max-width: 600px) {
-	header {
-		height: 100vh;
-	}
+
 
 	.header__socials,
 	.scroll__down {

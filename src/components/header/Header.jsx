@@ -20,19 +20,22 @@ const Header = () => {
 	return (
 		<header>
 			<div className='container header__container'>
-				<h5>Hello I'm</h5>
-				<h1>Piotr Prus</h1>
-				<h5 className='text-light'>I am future Frontend Developer</h5>
-				<CTA />
-				<HeaderSocial />
+
+				<div className='info'>
+					<h5>Hello I'm</h5>
+					<h1>Piotr Prus</h1>
+					<h5 className='text-light'>I am future Frontend Developer</h5>
+					<CTA />
+					<HeaderSocial />
+					<a href='#contact' className='scroll__down'>
+						Scroll Down
+					</a>
+				</div>
 
 				<div className='animation'>
 					<div className='container' ref={container}></div>
 				</div>
-
-				<a href='#contact' className='scroll__down'>
-					Scroll Down
-				</a>
+				
 			</div>
 		</header>
 	)
